@@ -8,6 +8,7 @@
  *     tmp <- num1
  *     num1 <- num2
  *     num2 <- num1 + num2
+ *   return num1
  */
 int fib(int number) {
     if (number < 2) {

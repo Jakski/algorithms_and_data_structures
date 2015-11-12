@@ -12,9 +12,9 @@
  *       right <- i - 1
  *     i <- (right + left) div 2
  *   if A[i] == elem then:
- *     print(i)
+ *     return i
  *   else:
- *     print(-1)
+ *     return -1
  */
 
 int binary_search(int *array, int element, int length){
