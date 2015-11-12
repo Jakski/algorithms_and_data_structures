@@ -9,7 +9,7 @@
  * here: http://stackoverflow.com/questions/28799209/design-the-binomial-coefficient-algorithm-using-a-single-dimensional-array
  *
  * BINOM(y, x):
- *   A <- [0..x]
+ *   A <- [0..x + 1]
  *   A[0] <- 1
  *   for i <- 1 to y do:
  *     for j <- x downto 1 do:
