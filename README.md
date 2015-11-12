@@ -5,11 +5,10 @@ To compile and launch program:
 ```
     make <algorithm_name>
 ```
-or:
+or in case you're in subfolder:
 ```
     make -f ../Makefile <algorithm_name>
 ```
-if you're in subfolder.
 To clean \*.out files:
 ```
     make clean
