@@ -11,8 +11,8 @@
  * BINOM(y, x):
  *   A <- [0..x + 1]
  *   A[0] <- 1
- *   for i <- 1 to y do:
- *     for j <- x downto 1 do:
+ *   for i <- 1 to y + 1 do:
+ *     for j <- x downto 0 do:
  *       A[j] <- A[j] + A[j - 1]
  *   return A[x]
  */
@@ -22,7 +22,7 @@ int binom(int y, int x) {
     int *array = calloc(x + 1, sizeof(int));
     array[0] = 1;
     for (int i = 1; i <= y; i++) {
-        for (int j = x; j >= 1; j--) {
+        for (int j = x; j > 0; j--) {
             array[j] = array[j] + array[j - 1];
         }
     }
