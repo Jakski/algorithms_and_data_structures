@@ -45,8 +45,6 @@ void merge_sort(int *A, int start, int end) {
 }
 
 int main(int argc, char **argv) {
-    /*int array[] = { 1, 3, 5, 7, 9, 2, 4, 6, 8 };*/
-    /*merge(array, 0, (0 + 8) / 2, 8);*/
     int array[] = { 4, 5, 2, 6, 34, 897, 2 };
     merge_sort(array, 0, 6);
     printIntArray(array, 7);
