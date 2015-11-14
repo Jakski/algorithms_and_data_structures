@@ -1,13 +1,5 @@
 #include <stdio.h>
 
-/*
- * GCD(number1, number2):
- *   while number2 > 0 do:
- *     tmp <- number1
- *     number1 = number1 mod number2
- *     number2 = tmp
- *   return number1
- */
 
 int gcd(int number1, int number2) {
     while (number2 > 0) {

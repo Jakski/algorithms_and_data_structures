@@ -1,15 +1,5 @@
 #include <stdio.h>
 
-/*
- * FIB(number):
- *   num1 <- 0
- *   num2 <- 1
- *   for i <- 0 to number do:
- *     tmp <- num1
- *     num1 <- num2
- *     num2 <- num1 + num2
- *   return num1
- */
 int fib(int number) {
     if (number < 2) {
         return number;

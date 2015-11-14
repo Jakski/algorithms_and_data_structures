@@ -1,12 +1,5 @@
 #include <stdio.h>
 
-/*
- * HORNER(A, len, x):
- *   sum <- 0
- *   for i <- 0 to len do:
- *     sum <- (sum * x) + A[i]
- *   return sum
- */
 
 int horner(int *array, int length, int x) {
     int sum = 0;

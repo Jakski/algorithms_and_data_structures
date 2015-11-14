@@ -1,21 +1,5 @@
 #include <stdio.h>
 
-/*
- * BIN(A, elem, length):
- *   i <- length div 2
- *   left <- 1
- *   rigth <- length
- *   while A[i] != elem and left < right:
- *     if A[i] <  elem then:
- *       left <- i + 1
- *     else:
- *       right <- i - 1
- *     i <- (right + left) div 2
- *   if A[i] == elem then:
- *     return i
- *   else:
- *     return -1
- */
 
 int binary_search(int *array, int element, int length){
     int i = length / 2;

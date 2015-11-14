@@ -2,21 +2,6 @@
 #include <stdlib.h>
 
 
-/*
- * We will compute it on single array instead of 2D array containing
- * whole Pascal's triangle. We start computing our line from right, so
- * we won't overwrite old values when moving. It's described in more detail
- * here: http://stackoverflow.com/questions/28799209/design-the-binomial-coefficient-algorithm-using-a-single-dimensional-array
- *
- * BINOM(y, x):
- *   A <- [0..x + 1]
- *   A[0] <- 1
- *   for i <- 1 to y + 1 do:
- *     for j <- x downto 0 do:
- *       A[j] <- A[j] + A[j - 1]
- *   return A[x]
- */
-
 int binom(int y, int x) {
     // dynamically allocating array
     int *array = calloc(x + 1, sizeof(int));
