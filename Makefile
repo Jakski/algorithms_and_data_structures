@@ -1,8 +1,8 @@
 CC = gcc
-CCFLAGS = -Wall
+CCFLAGS = -Wall -std=c99
 
 %:
-	$(CC) $@.c -o $@.out
+	$(CC) $(CCFLAGS) $@.c -o $@.out
 	./$@.out
 
 clean:
