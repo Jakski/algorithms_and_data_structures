@@ -3,7 +3,7 @@
 #include "auxiliary.h"
 
 
-int selection_sort(int *array, int len) {
+void selection_sort(int *array, int len) {
     for (int i = 0; i < len - 1; i++) {
         int k = i;
         for (int j = i + 1; j < len; j++) {
