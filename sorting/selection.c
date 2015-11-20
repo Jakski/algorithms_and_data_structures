@@ -2,15 +2,6 @@
 
 #include "auxiliary.h"
 
-/*
- * SELECTION_SORT(A, len):
- *   for i <- 1 to len - 1 do:
- *     k <- i
- *     for j <- i + 1 to len do:
- *       if A[j] < A[k] then:
- *         k <- j
- *     A[i] <--> A[k]
- */
 
 int selection_sort(int *array, int len) {
     for (int i = 0; i < len - 1; i++) {
