@@ -1,5 +1,5 @@
 CC = gcc
-CCFLAGS = -Wall -std=c99
+CCFLAGS = -Wall -std=c99 -g
 
 %:
 	$(CC) $(CCFLAGS) $@.c -o $@.out
