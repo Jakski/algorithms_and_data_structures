@@ -6,7 +6,7 @@ typedef struct stack_s Stack;
 struct stack_s {
     int top;
     int max;
-    int *stack;
+    int *body;
 };
 
 void push(Stack *stack, int value) {
@@ -15,7 +15,7 @@ void push(Stack *stack, int value) {
         puts("Stack overflow!");
         stack->top--;
     } else {
-        stack->stack[stack->top] = value;
+        stack->body[stack->top] = value;
     }
 }
 
@@ -32,7 +32,7 @@ int pop(Stack *stack) {
         return -1;
     } else {
         stack->top--;
-        return stack->stack[stack->top + 1];
+        return stack->body[stack->top + 1];
     }
 }
 
@@ -48,7 +48,7 @@ int main( int argc, char **argv ) {
     Stack stack = {
         .top = -1,
         .max = length - 1,
-        .stack = (int*)malloc(length * sizeof(int))
+        .body = (int*)malloc(length * sizeof(int))
     };
     char *command = (char*)malloc(6 * sizeof(char));
     for (;;) {
@@ -66,7 +66,7 @@ int main( int argc, char **argv ) {
             puts("Wrong command!");
         }
     }
-    free(stack.stack);
+    free(stack.body);
     free(command);
     return 0;
 }
