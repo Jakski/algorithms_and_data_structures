@@ -4,7 +4,7 @@
 
 int binom(int y, int x) {
     // dynamically allocating array
-    int *array = calloc(x + 1, sizeof(int));
+    int *array = (int*)calloc(x + 1, sizeof(int));
     array[0] = 1;
     for (int i = 1; i <= y; i++) {
         for (int j = x; j > 0; j--) {
