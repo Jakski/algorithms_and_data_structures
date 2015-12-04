@@ -7,7 +7,7 @@ void merge(int *A, int start, int middle, int end) {
     int i = start;
     int j = middle + 1;
     int l = start;
-    int *B = calloc(end + 1, sizeof(int));
+    int *B = (int*)calloc(end + 1, sizeof(int));
     while (i <= middle && j <= end) {
         if (A[i] < A[j]) {
             B[l] = A[i];
